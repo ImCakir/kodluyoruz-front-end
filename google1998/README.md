@@ -14,15 +14,19 @@ Bu proje, Google’ın 1998 yılındaki ana sayfasının basit bir HTML ve CSS t
 	•	Responsive ve estetik bir tasarım hedeflenmiştir
 	•	HTML yorum satırlarıyla açıklamalar eklenmiş
 
-google1998/
-│
-├── assets/                # Logo ve diğer medya dosyaları
-├── index.html             # Ana HTML dosyası
-├── style.css              # CSS dosyası
-└── README.md              # Proje açıklaması
+
+| Dosya / Klasör   | Açıklama                         |
+|-----------------|---------------------------------|
+| `assets/`       | Logo ve diğer medya dosyaları    |
+| `index.html`    | Ana HTML dosyası                 |
+| `style.css`     | CSS dosyası                      |
+| `README.md`     | Proje açıklaması                 |
+
+---
 
 Kullanım
 	1.	Bu repoyu klonlayın veya ZIP olarak indirin.
 	2.	index.html dosyasını tarayıcınızda açın.
 	3.	Arama kutusuna yazdığınız kelimeyi arayabilir veya “I’m Feeling Lucky” butonunu deneyebilirsiniz.
+
 	4.	Alt linkler tıklanabilir ve yeni sekmede açılır.
