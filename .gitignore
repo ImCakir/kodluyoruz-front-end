@@ -1,0 +1,9 @@
+# MacOS dosyaları
+.DS_Store
+
+# VS Code ayarları
+.vscode/
+
+# Diğer istemediğin dosyalar
+node_modules/
+*.log
