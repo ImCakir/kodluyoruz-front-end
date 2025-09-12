@@ -1,0 +1,205 @@
+
+/* Body ayarları: sayfa genel stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;  /* Tarayıcının default boşluklarını kaldır */
+    padding: 0;
+    text-align: center; /* Header ve formu ortalamak için */
+}
+/* Header stil */
+header img {
+    width: 300px; /* Logo boyutu */
+    margin-top: 50px; /* Sayfanın üstünden boşluk */
+}
+
+header p {
+    font-size: 18px; /* Başlık boyutu */
+    color: #5f6368; /* Yazı rengi */
+    margin-top: 10px; /* Logo ile başlık arası boşluk */
+    
+}
+.search-area {
+    background-color: #f2f2f2;  /* Hafif gri arka plan */
+    padding: 40px 0;            /* Üst ve alt boşluk */
+    display: flex;
+    justify-content: center;     /* Formu yatayda ortalar */
+    width: 80%;            /* Footer ile aynı genişlik */
+    margin: 0 auto;
+    box-sizing: border-box;   /* Padding dahil genişlik */ 
+}
+.search-area form {
+    width: 700px;   /* Form genişliği */
+    text-align: center;  /* İçeriyi ortala */
+}
+.search-form input[type="text"] {
+    height: 60px;       /* Daha yüksek */
+    font-size: 20px;    /* Yazı boyutu büyüdü */
+    padding: 0 20px;
+    border-radius: 30px;
+    
+}
+.search-form .buttons input[type="submit"] {
+    margin: 5px 5px;
+    height: 55px;
+    font-size: 18px;
+    padding: 0 30px;
+    border-radius: 6px;  /* Butonlar arası boşluk */
+}
+/* Arama kutusu */
+.search-form input[type="text"] {
+    width: 100%;  /* Arama kutusu genişliği */
+    height: 50px;   /* Yükseklik */
+    border: 1px solid #dcdcdc; /* Kenarlık */
+    border-radius: 22px; /* Kenarları yuvarlat */
+    padding: 0 20px; /* İç boşluk: soldan ve sağdan 15px */
+    font-size: 18px; /* Yazı boyutu */
+    outline: none;  /* Tıklandığında mavi çerçeveyi kaldır */
+    box-shadow: 0 1px 2px 4px rgba(0,0,0,0.1);  /* Hafif gölge */
+    margin-bottom: 15px; /* Alttan boşluk */
+    background-color: #f2f2f2;
+}
+/* Butonlar */
+.search-form .buttons input[type="submit"] {
+    height: 45px;
+    font-size: 16px;
+    color: #5f6368;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    margin: 5px;              /* Butonlar arası boşluk */
+    padding: 0 25px;
+    cursor: pointer;          /* fare üzerine geldiğinde el işareti */
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #cacbcc;
+
+}
+/* Alt Linkler */
+.footer-main {
+    background-color: #61d6e5; /* Açık gri arka */
+    display: flex;  /* İçindeki (divleri)bölümleri yan yana hizalamak için */
+    gap: 80px; /* Divler arası mesafe */
+    justify-content: center;  /* Ortaya hizalar */
+    padding: 20px; /* İç boşluk ekle */
+    width: 77%;  /* Footer genişliği (sayfanın %80’i) */
+    margin: 0 auto;  /* Ortalamak için */
+    align-items: flex-start;
+}
+/* Normal Görünüm */
+.footer-left a {
+    display: block; /* Linki alt alta dizer */
+    margin-bottom: 5px; /* Linkler arası boşluk */
+    color: #0000EE; 
+    text-decoration: none;  /* Alt çizgi yok*/
+}
+/* Mouse ile üzerine gelindiğinde değişen görünüm */
+.footer-left a:hover {
+    text-decoration: underline;
+}
+.footer-center a {
+    display: block;
+    margin-bottom: 5px;
+    color: #0000EE;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+/* Tüm div stili ayarı */
+.footer-right {
+    width: 200px; 
+    text-align: left;  /* İçerikleri sola hizala */
+
+}
+/* Linkleri ve yazıların stili */
+.footer-right a {
+    display: block; /* Alt alta diz */
+    margin-bottom: 5px; /* Araya Boşluk */
+    color: #0000EE; /* Link rengi */
+    text-decoration: none;  /* Alt çizgi yok */
+}
+/* Mouse ile üzerine gelindiğinde değişen görünüm */
+.footer-right a:hover {
+    text-decoration: underline;
+}
+/* E-mail kutusu tasarımı */
+.footer-right input[type="email"] {
+    width: 100%;             /* Kutucuk div genişliğine uyumlu */
+    padding: 5px;            /* İç boşluk */
+    margin-bottom: 5px;      /* Altına boşluk */
+    border: 1px solid #ccc;  /* Kenarlık rengi */
+    border-radius: 4px;      /* Kenarları yuvarla */
+
+}
+/* Subscribe butonunu tasarlayalım */
+.footer-right button {
+    width: 100%;             /* Kutucuk div genişliğine uyumlu */
+    padding: 5px;            /* İç boşluk */
+    margin-bottom: 5px;      /* Altına boşluk */
+    border: 1px solid #ccc;  /* Kenarlık rengi */
+    border-radius: 4px;      /* Kenarları yuvarla */
+
+}
+.footer-right button:hover {
+background-color: #e0e0e0; /* Hover efekti */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,32 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google!</title>
+    <title>Google1998</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Google Logo -->
-    <br><br><br><br><br><br><br><br><br><br>
-    <center>
+    <header>
         <img src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg" alt="Google Logo"> 
-        <br><br>
 
     <!-- Arama başlığı -->
         <p>Search the web using Google!</p>
+    </header>    
 
-    <!-- Arama Kutusu ve Butonlar -->
-     
-        <form action="https://www.google.com/search" method="get" >
-            <input type="text" name="q" size="50">
-            <br><br>
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
+<!-- Arama Alanı ve Butonlar -->
+<div class="search-area">
+    <main>
+        <!-- Arama Formu -->
+        <form action="https://www.google.com/search" method="get">
+
+            <!-- Arama Kutusu  -->
+            <input type="text" name="q" placeholder="Google Search">
+
+            <!-- Butonlar  -->
+            <div class="buttons">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky">
+            </div>
         </form>
+    </main>
+</div>
 
       <!-- Alt Linkler -->
-        <a href="https://about.google/" target="_blank">About Google</a> |
-        <a href="https://support.google.com/" target="_blank">Help</a> |
-        <a href="https://www.google.com/intl/en/about/company/" target="_blank">Company Info</a>  
-    </center>
+     <footer class="footer-main">
+       <div class="footer-left">
+            <a href="#">Special Searches</a><br>
+            <a href="#">Stanford Search</a><br>
+            <a href="#">Linux Seach</a>
+       </div>
+       <div class="footer-center">
+            <a href="#">Help!</a><br>
+            <a href="#">About Google!</a><br>
+            <a href="#">Company Info</a><br>
+            <a href="#">Google! Logos</a>
+       </div>
+       <div class="footer-right">
+            <a href="#">Get Google!</a><br>
+            <p>updates monthly:</p>
+            <input type="email" placeholder="Your e-mail"><br>
+            <button>Subscribe</button><br>
+            <a href="#">Archive</a>  
+       </div>
+     </footer>
+     <!-- Telif Kısmı -->
+     <div class="footer-bottom">
+        <p>Copyright ©1998 Google Inc.</p>
+     </div>
 
     
 </body>
