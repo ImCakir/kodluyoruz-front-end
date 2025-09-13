@@ -59,6 +59,3 @@ Bu proje, **Google’ın güncel ana sayfasının** basit bir HTML ve CSS ile kl
 
 ---
 
-## Görsel Örnek
-
-![Google Clone](assets/screenshot.png) *(opsiyonel: kendi ekran görüntünü ekleyebilirsin)*
