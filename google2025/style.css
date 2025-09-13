@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding/border hesaplamasını kolaylaştırır. */
+    font-family: Arial, sans-serif;
+    background-color: #fff;   /* Arka plan beyaz */
+    color: #202124;      /* Google’ın tipik yazı rengi */
+    min-height: 100vh;  /* Tüm ekranı kaplasın , ekran boyutu kadar uzasın*/
+    display: flex; /* body’yi flex container yapmak (bunu yapmazsak sadece flex: 1 işe yaramaz)*/ 
+    flex-direction: column; /* sayfa bileşenlerini yukarıdan aşağı sıraya koyuyoruz */
+
+}
+/* HEADER */
+header {
+    display: flex; /* içindeki kutuları yanyana sıralar */
+    justify-content: flex-end; /* her şeyi sağ tarafa yasla (yatay hizalama yapar) */
+    padding: 10px 20px; /* kutunun içeriği ile olan mesafeyi ayarlar */
+}
+
+.top-nav {
+    display: flex;
+    align-items: center; /* Dikey ortalama */ 
+    gap: 15px; /* öğeler arası boşluk */
+}
+
+.top-nav ul {
+    display: flex;
+    list-style: none; /* noktaları kaldır */
+    margin: 0; /* kutular arası mesafe sıfırlandı, boşluk yok */
+    padding: 0;  /* içerik ile kutu arasında mesafe yok */
+    gap: 15px;
+}
+
+/* Sağ üstteki Google ve Images linkleri için ayarlar */
+.top-nav ul li a {
+    text-decoration: none; /* metin üzerindeki standart dekorasyonları kaldırır. (Genelde linklerde [<a>] alt çizgiyi kaldırır */
+    color: #202124; /* google ın link rengi */
+    font-size: 14px;
+}
+
+/* App menü ikonu */
+.top-nav .app-menu img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer; /* imleç el işareti çıkar */
+    opacity: 0.7; /* saydamlık değeri, genelde 0-1 arasındadır. */
+}
+
+.top-nav .app-menu img:hover {
+    opacity: 1;
+}
+
+/* Profil resmi */
+.top-nav .profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* yuvarlak yap, kutunun genişliği ve yüksekliği eşitse tamamen daire olur */
+}
+
+/* main ortalaması */
+main {
+    flex: 1; /* footer’ı otomatik olarak ekranın altına iter. */
+    display: flex;
+    flex-direction: column; /* dikey diziliş, yukarıdan aşağı */
+    align-items: center; /* Hepsinin yatayda ortala */
+    margin-top: 50px; /* sayfanın üstünden boşluk bırakır */
+}
+
+/* Logo boyutu ve ortalama */
+.logo img {
+    width: 300px; /* logonun genişliği */
+    margin-bottom: 30px; /* Logo ile arama kutusu arası boşluk */
+}
+
+/* Arama kutusu ve ikon */
+.search-box {
+    position: relative; /* İçindeki span'ı konumlamak için */
+    width: 500px;  /* Arama kutusunun genişliği */
+}
+
+.search-box input[type="text"] {
+    width: 100%; /* Kutuyu kapsayan div kadar genişlet */
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 20px 0 20px; /* Sağda ikon için ekstra boşluk, solda iç boşluk */
+    font-size: 18px;
+    outline: none; /* dış çerçeveyi kaldır */
+}
+
+.search-box .icon-right {
+    position: absolute; /* Konumu kesin belirlenir */
+    right: 5px; /* sağdan boşluk */
+    top: 50%;  /* dikey ortala */
+    transform: translateY(-50%); /* kutuyu kendi yüksekliğinin yarısı kadar yukarı kaydırır */
+    cursor: pointer; 
+}
+
+.search-box .icon-right img {
+    width: 25px;       /* İkonun genişliği */
+    height: 25px;      /* İkonun yüksekliği */
+}
+
+.buttons {
+    margin-top: 15px; /* arama kutusu ile butonlar arası mesafe */
+    text-align: center;  /* Butonları yatayda ortala */
+    justify-content: center; /* butonları ortala */
+    display: flex;
+    gap: 10px; /* Google gibi butonlar arası boşluk */
+    width: 100%;  /* div’in genişliği container kadar */
+}
+
+.buttons button {
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f2f2f2; /* gri renk yerine istediğin renk */
+    border: 1px solid #dcdcdc;  /* gri border ekle */
+    display: inline-flex;        /* flex içinde düzgün davranması için */
+    align-items: center;         /* dikey ortala */
+    justify-content: center;     /* yatay ortala */
+    font-size: 14px;             /* yazı boyutu */
+}
+
+.languages {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Footer Genel */
+footer {
+    display: flex; /* Yan yana iki div olacak */
+    justify-content: space-between; /* Sol ve sağ sütunları olabildiğince uzaklaştır */
+    align-items: center; /* Dikeyde ortala */
+    padding: 15px 30px; /* İç boşluk: üst-alt 15px, sağ-sol 30px */
+    background-color: #f2f2f2;     /* Hafif gri arka plan */
+    font-size: 14px;
+    color: #5f6368; /* Yazı rengi */
+}
+
+/* Footer sol sütun */
+.footer-left ul {
+    list-style: none; /* Nokta işaretlerini kaldır */
+    margin: 0;        /* Varsayılan margin’i kaldır */
+    padding: 0;       /* Varsayılan padding’i kaldır */
+    display: flex;    /* Linkleri yatay diz */
+    gap: 15px; /* Linkler arası boşluk */
+}
+
+.footer-left ul li a {
+    text-decoration: none;        /* Alt çizgiyi kaldır */
+    color: #5f6368;               /* Yazı rengi */
+}
+
+.footer-left ul li a:hover {
+    text-decoration: underline;   /* Hover’da alt çizgi */
+}
+
+/* Footer sağ sütun */
+.footer-right ul {
+    list-style: none;             
+    margin: 0;                    
+    padding: 0;                   
+    display: flex;                
+    gap: 15px;                    
+}
+.footer-right ul li a {
+    text-decoration: none;        
+    color: #5f6368;               
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;   
+}
+
+/* RESPONSIVe */
+@media (max-width: 600px) {
+    .logo img {
+        width: 200px;
+    }
+    .search-box {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
