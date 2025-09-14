@@ -40,8 +40,8 @@ header {
 
 /* App menü ikonu */
 .top-nav .app-menu img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     cursor: pointer; /* imleç el işareti çıkar */
     opacity: 0.7; /* saydamlık değeri, genelde 0-1 arasındadır. */
 }
@@ -75,30 +75,50 @@ main {
 /* Arama kutusu ve ikon */
 .search-box {
     position: relative; /* İçindeki span'ı konumlamak için */
-    width: 500px;  /* Arama kutusunun genişliği */
+    width: 600px;  /* Arama kutusunun genişliği */
 }
 
 .search-box input[type="text"] {
     width: 100%; /* Kutuyu kapsayan div kadar genişlet */
     height: 50px;
     border-radius: 25px;
-    padding: 0 20px 0 20px; /* Sağda ikon için ekstra boşluk, solda iç boşluk */
+    padding: 0 120px 0 45px; /* sağ padding = ikon genişliği + biraz boşluk */
     font-size: 18px;
     outline: none; /* dış çerçeveyi kaldır */
+    background-color: #fff; /* beyaz arka plan */
+    box-sizing: border-box;  /* padding ve border düzgün hesaplansın */
+    border: 1px solid #dcdcdc; /* opsiyonel: hafif gri sınır */
 }
 
 .search-box .icon-right {
+    display: flex;
     position: absolute; /* Konumu kesin belirlenir */
-    right: 5px; /* sağdan boşluk */
+    right: 25px; /* sağdan boşluk */
     top: 50%;  /* dikey ortala */
+    gap: 8px; /* ikonlar arası mesafe koyar */
     transform: translateY(-50%); /* kutuyu kendi yüksekliğinin yarısı kadar yukarı kaydırır */
     cursor: pointer; 
+   background: transparent;
 }
 
 .search-box .icon-right img {
     width: 25px;       /* İkonun genişliği */
     height: 25px;      /* İkonun yüksekliği */
+    cursor: pointer; /* tıklanabilir görünsün */
 }
+/* Sol ikon (büyüteç) */
+.icon-left {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.icon-left img {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
 
 .buttons {
     margin-top: 15px; /* arama kutusu ile butonlar arası mesafe */
